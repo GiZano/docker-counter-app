@@ -7,7 +7,7 @@ Simple project to learn Docker, Docker compose and scaling with Docker.
 1. Clone the project
     
    ```bash
-    git clone X
+    git clone https://github.com/GiZano/docker-counter-app.git
     cd docker-counter-app
    ```
 
