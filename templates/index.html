@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Counter App</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+</head>
+<body>
+    <h1>Docker Counter App</h1>
+    
+    <div class="counter">
+        <h3>Visit Counter</h3>
+        <div class="value" id="visits-value">0</div>
+        <button onclick="incrementCounter('visits')">+1 Visita</button>
+        <button onclick="resetCounter('visits')">Reset</button>
+    </div>
+
+    <div class="counter">
+        <h3>Click Counter</h3>
+        <div class="value" id="clicks-value">0</div>
+        <button onclick="incrementCounter('clicks')">+1 Click</button>
+        <button onclick="resetCounter('clicks')">Reset</button>
+    </div>
+</body>
+</html>
