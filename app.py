@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify, send_from_directory
 import redis
 import os
+import socket
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
@@ -36,6 +37,11 @@ def reset(counter_name):
         return jsonify({'message': f'Counter {counter_name} reset'})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
-    
+
+# health check endpoint
+@app.route('/health')
+def health():
+    return jsonify({'status': 'healthy', 'host': socket.gethostname()})
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

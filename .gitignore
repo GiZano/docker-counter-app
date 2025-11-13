@@ -54,3 +54,6 @@ logs/
 # Redis data (se hai dati locali)
 redis-data/
 data/
+
+# Build Configuration Data
+config.ps1
