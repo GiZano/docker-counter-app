@@ -15,8 +15,14 @@ Simple project to learn Docker, Docker compose and scaling with Docker.
     ```bash
     docker-compose up -d --scale web:[X]
     ```
+    *** [X] --> number of desired istances ***
+   
+    2.1 Start only one istance
+    ```bash
+    docker-compose up -d
+    ```
     
-3. Open browser
+4. Open browser
 
     App: http://localhost:80
 
